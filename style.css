@@ -8,6 +8,9 @@ body {
     margin-left: 0;
 }
 
+main{
+    display: flex;
+}
 
 
 .img_email {
@@ -152,7 +155,7 @@ nav.sidebar{
     padding-left: 1rem;
     display: flex;
     width: 1px;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     /* padding: 1% 5% 100% 4%; */
     position: fixed;
@@ -170,6 +173,7 @@ nav.sidebar{
 
  nav.sidebar:hover{
     width: 200px;
+    
 } 
 
 
@@ -196,6 +200,7 @@ ul{
 ul li.item-menu:hover{
     background-color: #661e90;
     transition: .2s;
+    border-radius: 5px; 
     
 
 }
