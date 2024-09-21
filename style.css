@@ -1,0 +1,410 @@
+body {
+    background-color: #0f0f13;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+.img_email {
+    width: 25px;
+}
+
+
+
+
+.containerimglogo {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    background-color: #0f0f13;
+}
+
+a{
+    padding: 0;
+    
+}
+
+.imgNomeDalogo {
+    width: 16%;
+    
+    
+}
+.tag-a{
+    padding-top: 2%;
+}
+
+.img_contato {
+    width: 25px;
+}
+
+
+/*card do achei pet*/
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra para destacar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    max-width: 150px;
+    /* Aumenta o tamanho da imagem do gato */
+    margin-bottom: 10px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.text-section {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.text-section h1,
+.text-section p {
+    margin: 0;
+    text-align: center;
+}
+
+.text-section h1 {
+
+    
+    font-family: 'Fredoka One', sans-serif; 
+    font-size: 26px;
+    font-weight: bold;
+    color: #4b2911;
+    
+    /* Texto preto */
+}
+
+.text-section p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    /* Texto cinza escuro */
+}
+
+/*  fim do card   */
+
+
+/* banner */
+.banner01 {
+    background-size: 100%;
+    height: 300px;
+    background-image: url(imagens/BannerOctoCode.png);
+    background-repeat: no-repeat;
+
+}
+
+
+/* css do video da sidebar */
+
+.btn_hamburguer {
+    margin-right: 1rem;
+}
+
+.imgExpandir {
+    width: 15%;
+    display: flex;
+    
+}
+
+
+nav.sidebar{
+
+    padding-left: 1rem;
+    display: flex;
+    width: 1px;
+    height: 100vh;
+    background-color: white;
+    /* padding: 1% 5% 100% 4%; */
+    position: fixed;
+    justify-content: start;
+    flex-direction: column;
+    margin-right: 2rem;
+    box-shadow: 4px 0 0 #661e90;
+    
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+
+}
+
+ nav.sidebar:hover{
+    width: 200px;
+} 
+
+
+.btn_hamburguer{
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 1px;
+    
+    
+}
+
+.item_menu{
+    width: 10rem;
+    
+}
+
+ul li.item-menu:hover{
+    background-color: #661e90;
+    transition: .2s;
+    
+
+}
+
+ul li.item_menu{
+     transition: 1s; 
+}
+
+ul li.item-menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+}
+
+ul li.item-menu a .icon >i{
+    font-size: 20px;
+    margin: 2px;
+    padding-inline: 3;
+    margin-top: 2%;
+    
+
+}
+
+.nav_menuSidebar{
+
+    height: 100vh;
+    
+}
+
+.logodosidebar{
+width: 125px;
+padding: 2rem;
+margin-right: 17px;
+
+}
+
+.div_btnEmail{
+    padding-bottom: 10%;
+
+}
+
+
+
+/* DEIXAR TRANSPARENTE */
+
+
+
+/* Quando a sidebar estiver sendo "hovered", aplicar o blur e mostrar o overlay */
+.sidebar:hover ~ .main-content {
+    filter: blur(5px);
+}
+
+.sidebar:hover ~ .overlay {
+    visibility: visible;
+    opacity: 10;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+    z-index: 1000;
+}
+
+
+
+/* Carousel */
+
+ .container-CidadeRoxa{
+    background-image: url(imagens/Cidaderoxo-transformed.png);
+    background-size: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    
+   
+    /*margin: 0,
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+} 
+
+.container-degrade02{
+    background: linear-gradient(180deg, rgba(74,0,108,1) 0%, rgba(0,0,0,1) 86%);
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    }
+
+    .container-degrade01{
+        background: linear-gradient(180deg, rgba(15,15,19,1) 43%, rgba(74,0,108,1) 86%);
+        background-size: 100%;
+        height: 100vh;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    
+    width: 800px;
+    margin-top: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.manual-btn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #661e90;
+    border: 2px solid  #000000;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+    /*talves de uns errinhos, se ocorrer, ajustar essa porcentagem :D */
+}
+.navigation-auto div{
+    border: 2px solid #661e90;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content:center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffffff;
+}
+#radio2:checked ~ .navigation-auto  .auto-btn2{
+    background-color: #ffffff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffffff;
+}
+
