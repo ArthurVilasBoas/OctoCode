@@ -7,7 +7,7 @@
 
 body {
     background-color: #0f0f13;
-    
+    align-items: center; 
     text-align: center;
     margin: 0;
     padding: 0;
@@ -87,6 +87,8 @@ a{
     text-align: center;
 }
 
+
+
 .logo-section {
     display: flex;
     flex-direction: column;
@@ -94,6 +96,8 @@ a{
     align-items: center;
     width: 100%;
 }
+
+
 
 .logo {
     max-width: 150px;
@@ -113,22 +117,30 @@ a{
     text-align: center;
 }
 
-.text-section h1,
+
 .text-section p {
     margin: 0;
     text-align: center;
 }
 
+
+
+
+
+    /* font-family: magic;
+    src: url(fonts/MAGIC\ NIGHT.otf) format('opentype'),url(fonts/MAGIC\ NIGHT.ttf) format('truetype'); */
+
 .text-section h1 {
 
     
-    font-family: 'Fredoka One', sans-serif; 
+    
     font-size: 26px;
     font-weight: bold;
     color: #4b2911;
     
     /* Texto preto */
 }
+
 
 .text-section p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -245,11 +257,11 @@ ul li.item-menu a .icon >i{
 
 }
 
-.nav_menuSidebar{
+/* .nav_menuSidebar{
 
-    height: 100vh;
     
-}
+    
+} */
 
 .logodosidebar{
 width: 125px;
@@ -360,7 +372,7 @@ margin-right: 17px;
 }
 
 .manual-navigation{
-    
+     
     width: 800px;
     margin-top: 34%;
     display: flex;
