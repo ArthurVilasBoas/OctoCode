@@ -5,6 +5,15 @@
 
 }
 
+@font-face {
+    font-family: 'magic';
+    src:  url(fonts/MAGIC\ NIGHT.ttf)format(truetype);
+    font-family: 'squashy';
+    src: url(fonts/Squashy\ Flow.ttf)format(truetype);
+    
+}
+
+
 body {
     background-color: #0f0f13;
     align-items: center; 
@@ -19,12 +28,15 @@ body {
     grid-template-columns:1px;
 }
 
-main{
-    
- width: 100vw;
- height: 100%;
-}
 
+/* banner */
+.banner01 {
+    background-size: 100%;
+    height: 40vh;
+    background-image: url(imagens/BannerOctoCode.png);
+    background-repeat: no-repeat;
+
+}
 
 .img_email {
     width: 25px;
@@ -133,10 +145,13 @@ a{
 .text-section h1 {
 
     
+     font-family: ""; 
+    font-size: 30px;
     
-    font-size: 26px;
+    border-radius: 15px;
     font-weight: bold;
-    color: #4b2911;
+    margin-top: 20px;
+    color: #000000;
     
     /* Texto preto */
 }
@@ -152,14 +167,7 @@ a{
 /*  fim do card   */
 
 
-/* banner */
-.banner01 {
-    background-size: 100%;
-    height: 300px;
-    background-image: url(imagens/BannerOctoCode.png);
-    background-repeat: no-repeat;
 
-}
 
 
 /* css do video da sidebar */
@@ -177,9 +185,9 @@ a{
 
 nav.sidebar{
 
-    padding-left: 1rem;
+    
     display: flex;
-    width: 1px;
+    width: 35px;
     height: 100%;
     background-color: white;
     /* padding: 1% 5% 100% 4%; */
@@ -223,11 +231,13 @@ ul{
     
 }
 
-ul li.item-menu:hover{
+.item-menu:hover{
     background-color: #661e90;
     transition: .2s;
     border-radius: 5px; 
-    
+    padding-top: 5px;    
+    padding-left: 5px;
+
 
 }
 
@@ -242,6 +252,13 @@ ul li.item-menu a{
     display: flex;
     margin-bottom: 20px;
     line-height: 30px;
+    transition: .2s;
+}
+
+
+ul li.item-menu a:hover{
+    color: white;
+    transition: .2s;
 }
 
 ul li.item-menu a .txt-link{
@@ -264,11 +281,13 @@ ul li.item-menu a .icon >i{
 } */
 
 .logodosidebar{
-width: 125px;
-padding: 2rem;
+width: 175px;
+padding: 3rem;
 margin-right: 17px;
 
 }
+
+
 
 .div_btnEmail{
     padding-bottom: 10%;
