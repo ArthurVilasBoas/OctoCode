@@ -5,6 +5,19 @@
 
 }
 
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    
+    
+}
+
+
 @font-face {
     font-family: 'magic';
     src:  url(fonts/MAGIC\ NIGHT.ttf)format(truetype);
@@ -33,7 +46,7 @@ body {
 .banner01 {
     background-size: 100%;
     height: 40vh;
-    background-image: url(imagens/BannerOctoCode.png);
+    background-image: url(imagens/Blue\ and\ Pink\ Modern\ Tech\ Electronics\ and\ Technology\ Retractable\ Exhibition\ Banner.png);
     background-repeat: no-repeat;
 
 }
@@ -187,17 +200,17 @@ nav.sidebar{
 
     
     display: flex;
-    width: 35px;
+    width: 43px;
     height: 100%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     /* padding: 1% 5% 100% 4%; */
     position: fixed;
     justify-content: start;
     flex-direction: column;
     margin-right: 2rem;
-    box-shadow: 4px 0 0 #661e90;
-    
-    z-index: 1;
+    box-shadow: 0px 0px 10px 0px #661e90;
+    border: 2px solid #661e90;
+    z-index: 100;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -207,8 +220,14 @@ nav.sidebar{
 
  nav.sidebar:hover{
     width: 200px;
+ 
     
 } 
+
+
+nav.sidebar:hover ~ .overlay{
+    filter: blur(20px);
+}
 
 
 .btn_hamburguer{
@@ -232,7 +251,7 @@ ul{
 }
 
 .item-menu:hover{
-    background-color: #661e90;
+    background-color: #ffffff;
     transition: .2s;
     border-radius: 5px; 
     padding-top: 5px;    
@@ -246,7 +265,7 @@ ul li.item_menu{
 }
 
 ul li.item-menu a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     display: flex;
@@ -257,7 +276,7 @@ ul li.item-menu a{
 
 
 ul li.item-menu a:hover{
-    color: white;
+    color: #000000;
     transition: .2s;
 }
 
@@ -300,29 +319,8 @@ margin-right: 17px;
 
 
 
-/* Quando a sidebar estiver sendo "hovered", aplicar o blur e mostrar o overlay */
-.sidebar:hover ~ .main-content {
-    filter: blur(5px);
-}
-
-.sidebar:hover ~ .overlay {
-    visibility: visible;
-    opacity: 10;
-}
 
 
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease;
-    z-index: 1000;
-}
 
 
 
@@ -458,3 +456,7 @@ margin-right: 17px;
     background-color: #ffffff;
 }
 
+.container_tudo_tudo{
+    padding: 0;
+    margin: 0;
+}

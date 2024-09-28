@@ -14,3 +14,25 @@ function nextImage() {
     document.getElementById("radio"+count).checked = true;
 }
 
+
+
+
+const overlay = document.querySelector('.overlay');
+const navbar = document.getElementById('SideBar');
+
+navbar.addEventListener("mouseover", ()=>{
+  acionaOverlay();
+});
+navbar.addEventListener("mouseout", ()=>{
+  removeOverlay();
+});
+
+function acionaOverlay(){
+  overlay.style.display = 'block';
+  overlay.style.filter = 'blur(1.7rem)';
+  console.log("Zika de mais ");
+}
+
+function removeOverlay(){
+  overlay.style.display = 'none';
+}
