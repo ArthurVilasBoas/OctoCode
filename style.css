@@ -202,14 +202,14 @@ nav.sidebar{
     display: flex;
     width: 43px;
     height: 100%;
-    background-color: #524E4E;
+    background-color: #000000;
     /* padding: 1% 5% 100% 4%; */
     position: fixed;
     justify-content: start;
     flex-direction: column;
     margin-right: 2rem;
-    box-shadow: 0px 0px 10px 0px #661e90;
-    border: 2px solid #661e90;
+    box-shadow: 0px 0px 15px 0px #661e90;
+    border: 3px solid #661e90;
     z-index: 100;
     top: 0;
     left: 0;
