@@ -23,7 +23,8 @@
     src:  url(fonts/MAGIC\ NIGHT.ttf)format(truetype);
     font-family: 'squashy';
     src: url(fonts/Squashy\ Flow.ttf)format(truetype);
-    
+    font-family: 'lexend';
+    src: url(fonts/Lexend-VariableFont_wght.ttf)format(truetype);
 }
 
 
@@ -185,6 +186,10 @@ a{
 
 /* css do video da sidebar */
 
+.txt-link{
+    font-family: 'lexend';
+}
+
 .btn_hamburguer {
     margin-right: 1rem;
 }
@@ -271,7 +276,7 @@ ul li.item-menu a{
     display: flex;
     margin-bottom: 20px;
     line-height: 30px;
-    transition: .2s;
+    
 }
 
 
