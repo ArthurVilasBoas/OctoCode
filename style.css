@@ -220,6 +220,7 @@ nav.sidebar{
     left: 0;
     overflow: hidden;
     transition: .4s;
+    display: none;
 
 }
 
@@ -297,6 +298,24 @@ ul li.item-menu a .icon >i{
     
 
 }
+
+
+
+/* hamburguer */
+i#burguer{
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+i#burguer:hover{
+color: #000000;
+background-color: #ffffff;
+}
+
+
 
 /* .nav_menuSidebar{
 
