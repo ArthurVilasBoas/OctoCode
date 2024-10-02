@@ -25,6 +25,15 @@
     src: url(fonts/Squashy\ Flow.ttf)format(truetype);
     font-family: 'lexend';
     src: url(fonts/Lexend-VariableFont_wght.ttf)format(truetype);
+
+ 
+}
+
+@font-face {
+    font-family: 'comfortaa';
+    src: url(fonts/Comfortaa-VariableFont_wght.ttf)format(truetype);
+    font-family: 'read';
+    src: url(fonts/Comfortaa-VariableFont_wght.ttf)format(truetype);
 }
 
 
@@ -47,7 +56,7 @@ body {
 .banner01 {
     background-size: 100%;
     height: 40vh;
-    background-image: url(imagens/Blue\ and\ Pink\ Modern\ Tech\ Electronics\ and\ Technology\ Retractable\ Exhibition\ Banner.png);
+    background-image: url(imagens/OctoCode_Bannermelhorado01.png);
     background-repeat: no-repeat;
 
 }
@@ -99,8 +108,8 @@ a{
 }
 
 .card {
-    width: 350px;
-    height: 350px;
+    width: 360px;
+    height: 360px;
     background-color: #ffffff;
     border-radius: 19px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -129,6 +138,9 @@ a{
     max-width: 150px;
     /* Aumenta o tamanho da imagem do gato */
     margin-bottom: 10px;
+    cursor: pointer;
+    border: solid black 2px;
+    border-radius: 100%;
 }
 
 .horizontal-line {
@@ -145,8 +157,11 @@ a{
 
 
 .text-section p {
-    margin: 0;
+    margin: 2px;
     text-align: center;
+    
+
+    
 }
 
 
@@ -159,11 +174,11 @@ a{
 .text-section h1 {
 
     
-     font-family: ""; 
+     font-family: "read"; 
     font-size: 30px;
-    
-    border-radius: 15px;
     font-weight: bold;
+    border-radius: 15px;
+    font-weight: bold ;
     margin-top: 20px;
     color: #000000;
     
@@ -173,9 +188,16 @@ a{
 
 .text-section p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     color: #000000;
+    text-decoration: underline #661e90 3px ;
     /* Texto cinza escuro */
+}
+.text-section p:hover{
+    color: #661e90;
+    text-decoration: underline #000000 3px ;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 /*  fim do card   */
@@ -186,9 +208,7 @@ a{
 
 /* css do video da sidebar */
 
-.txt-link{
-    font-family: 'lexend';
-}
+
 
 .btn_hamburguer {
     margin-right: 1rem;
@@ -205,7 +225,7 @@ nav.sidebar{
 
     
     display: flex;
-    width: 47.5px;
+    width: 200.5px;
     height: 100%;
     background-color: #000000;
     /* padding: 1% 5% 100% 4%; */
@@ -221,16 +241,20 @@ nav.sidebar{
     overflow: hidden;
     transition: .4s;
     display: none;
+    font-family: 'lexend';
 
 }
 
- nav.sidebar:hover{
-    width: 200px;
- 
-    
-} 
+
 .txt-link-Fexar{
     padding-left: 5rem;
+   
+    
+}
+
+
+.txt-link{
+    font-family: 'lexend';
 }
 
 
@@ -272,6 +296,7 @@ ul{
 
 ul li.item_menu{
      transition: 1s; 
+     
 }
 
 ul li.item-menu a{
@@ -281,6 +306,7 @@ ul li.item-menu a{
     display: flex;
     margin-bottom: 20px;
     line-height: 30px;
+    
     
 }
 
@@ -292,6 +318,7 @@ ul li.item-menu a:hover{
 
 ul li.item-menu a .txt-link{
     margin-left: 20px;
+    
 }
 
 ul li.item-menu a .icon >i{
@@ -312,7 +339,6 @@ ul li.item-menu a .icon >i{
 .icon_fexar{
     font-size: 2px;
     margin: 2px;
-    padding-inline: 5;
     margin-top: 2%;
     padding-left: 35%;
 
@@ -325,33 +351,44 @@ i#burguer{
     color: #000000;
     display: block;
     text-align: center;
-    padding: 1rem;
+    padding: 14px;
     cursor: pointer;
     position: fixed;
     z-index: 3;
     background-color: #ffffff;
-    border-radius: 35px;
+    border-radius: 100%;
     background-size: 1rem;
     
+    
 }
+
 i#burguer:hover{
-color: #000000;
-background-color: #ffffff;
+    border-radius: 100%;
+    background-color: #ffffff;
 
 }
+ #bi-arrow-left{
+    width: 60px;
+    height: 60px;
+} 
 
 
-
+.burguer{
+    padding-left: 5px;
+}
+ 
 /* .nav_menuSidebar{
 
     
     
 } */
 
+
+
 .logodosidebar{
 width: 175px;
 padding: 3rem;
-margin-right: 17px;
+
 
 }
 

@@ -20,28 +20,13 @@ function nextImage() {
 const overlay = document.querySelector('.overlay');
 const navbar = document.getElementById('SideBar');
 
-navbar.addEventListener("mouseover", () => {
-  acionaOverlay();
-});
-navbar.addEventListener("mouseout", () => {
-  removeOverlay();
-});
-
-function acionaOverlay() {
-  overlay.style.display = 'block';
-  overlay.style.filter = 'blur(1.7rem)';
-  console.log("Zika de mais ");
-}
-
-function removeOverlay() {
-  overlay.style.display = 'none';
-}
-
 function clickMenu() {
   if (SideBar.style.display == 'block') {
     SideBar.style.display = 'none'
+    overlay.style.display = 'none'
   } else {
     SideBar.style.display = 'block'
+    overlay.style.display = 'block';
         
     }
   }
