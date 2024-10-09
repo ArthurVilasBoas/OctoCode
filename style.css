@@ -54,11 +54,11 @@ body {
 
 /* banner */
 .banner01 {
-    background-size: 100%;
-    height: 40vh;
+    background-size: 100vw;
+    height: 100vh;
     background-image: url(imagens/OctoCode_Bannermelhorado01.png);
     background-repeat: no-repeat;
-
+    /* max-height: 35vh; */
 }
 
 .img_email {
@@ -330,9 +330,21 @@ ul li.item-menu a .icon >i{
 
 }
 
+.carousel-inner > .carousel-item > img {
+    width: 50px;
+    height: 100px; 
+    background-size: 100vw;
+  }
+  #carouselExampleIndicators{
+ color: #661e90;
+  }
+
+.Indicators{
+    color: #661e90;
+}
 
 .item_menu_Fexar{
-    width: 10px;
+    width: 5px;
     color: #ffffff;
     
 }
@@ -344,33 +356,25 @@ ul li.item-menu a .icon >i{
 
 }
 .div_btnFexar{
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+
 }
 /* hamburguer */
 i#burguer{
     color: #000000;
     display: block;
     text-align: center;
+    width: 50px;
     padding: 14px;
     cursor: pointer;
     position: fixed;
     z-index: 3;
     background-color: #ffffff;
     border-radius: 100%;
-    background-size: 1rem;
+   
     
     
 }
-
-i#burguer:hover{
-    border-radius: 100%;
-    background-color: #ffffff;
-
-}
- #bi-arrow-left{
-    width: 60px;
-    height: 60px;
-} 
 
 
 .burguer{
@@ -407,16 +411,23 @@ padding: 3rem;
 
 
 
-
+.container_banner{
+   
+    background-size: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+   background-color: black 
+}
 
 
 /* Carousel */
 
  .container-CidadeRoxa{
-    background-image: url(imagens/Cidaderoxo-transformed.png);
+    background-image: url(imagens/cidade_roxa_sembarco.png);
     background-size: 100%;
     height: 400px;
     background-repeat: no-repeat;
+    border-radius: 0%;
     
    
     /*margin: 0,
@@ -431,8 +442,8 @@ padding: 3rem;
 
 .container-degrade02{
     background: linear-gradient(180deg, rgba(74,0,108,1) 0%, rgba(0,0,0,1) 86%);
-    background-size: 100%;
-    height: 100vh;
+    background-size: 300px;
+    /* height: 50px; */
     display: flex;
     padding: 0;
     margin: 0;
@@ -448,101 +459,3 @@ padding: 3rem;
         margin: 0;
     }
 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 400px;
-    height: 400px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25;
-    position: relative;
-}
-
-.slide img{
-    width: 800px;
-}
-
-.manual-navigation{
-     
-    width: 800px;
-    margin-top: 34%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-.manual-btn{
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor:pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: #661e90;
-    border: 2px solid  #000000;
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~.first{
-    margin-left: -50%;
-    /*talves de uns errinhos, se ocorrer, ajustar essa porcentagem :D */
-}
-.navigation-auto div{
-    border: 2px solid #661e90;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content:center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #ffffff;
-}
-#radio2:checked ~ .navigation-auto  .auto-btn2{
-    background-color: #ffffff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #ffffff;
-}
-
-.container_tudo_tudo{
-    padding: 0;
-    margin: 0;
-}
