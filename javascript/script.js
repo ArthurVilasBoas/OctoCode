@@ -14,7 +14,9 @@ function nextImage() {
   document.getElementById("radio" + count).checked = true;
 }
 
-
+function  sideAberta(){
+  
+}
 
 
 const overlay = document.querySelector('.overlay');
