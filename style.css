@@ -521,8 +521,6 @@ padding: 3rem;
 
 
 
-
-
 .container_banner{
    
     background-size: 100%;
@@ -533,6 +531,7 @@ padding: 3rem;
 
 
 /* Carousel */
+
 
 @font-face {
     font-family: 'Orbitron';
@@ -547,10 +546,12 @@ padding: 3rem;
     font-family: 'Orbitron';
 }
 
+
+
 /* containers */
 
  .container-CidadeRoxa{
-    background: linear-gradient(180deg,  rgba(74,0,108,1) 16%, #0f0f13 56%);
+    background-color: #0f0f13;
     background-size: 100%;
     height: 500px;
     background-repeat: no-repeat;
@@ -572,7 +573,7 @@ padding: 3rem;
 .container-degrade02{
     background: linear-gradient(180deg, #0f0f13 86%, rgba(74,0,108,1));
     width: 100%;
-    height: 1000px;
+    height: 100vw;
     /* height: 50px; */
     display: block  ;
     padding: 0;
@@ -583,7 +584,7 @@ padding: 3rem;
     }
 
     .container-degrade01{
-        background: linear-gradient(180deg, rgba(15,15,19,1) 43%, rgba(74,0,108,1) 86%);
+        background-color: #0f0f13;
         background-size: 100%;
         height: 100vh;
         display: flex;
@@ -593,71 +594,80 @@ padding: 3rem;
 
 /* card da equipe  */
 
-.flip-card {
-    background-color: transparent;
-    width: 190px;
-    height: 200px;
-    perspective: 1000px;
-    font-family: sans-serif;
+.card01 {
+    width: 23em;
+    height: 23.5em;
+    background: #200a2c;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin: 5rem;
+
+  }
+  
+  .card01 span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card01 .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin: 1em;
+  }
+  
+  .card01 .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+  .card01 .share {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 1rem;
    
   }
   
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
+  .card01 a {
+    color: white;
+    transition: .4s ease-in-out;
   }
   
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
+ 
   
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  .card01 button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
   }
-
-  .icone-card{
-    
-    width: 60px;
-    height: 50px;
+ .img_logo_card01{
+    background-image: url(imagens/icone_emBranco.png);
+    background-color: #ffffff;
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    border: #ffffff solid 2px;
-   justify-content: center;
-   margin: 10px;
-   margin-left: auto;
-    margin-right: auto; 
-   position: relative;
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 1rem;
-  }
-  
-  .flip-card-front {
-    background: linear-gradient(270deg, rgba(43,8,62,1) 41%, rgba(0,0,0,1) 97%);
-    color: rgb(255, 255, 255);
-  }
-  
-  .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-       bisque 40%, rgb(255, 185, 160) 78%);
-    color: white;
-    transform: rotateY(180deg);
-  }
+    overflow: hidden;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 2px wheat;
+    border-radius: 100%;
+  } 
