@@ -573,7 +573,7 @@ padding: 3rem;
 .container-degrade02{
     background-color: #0f0f13;
     width: 100%;
-    height: 100vw;
+    height: 100pc;
     /* height: 50px; */
     display: block  ;
     padding: 0;
@@ -599,7 +599,8 @@ padding: 3rem;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
+  background-color: #0f0f13;
   
 }
 
@@ -610,7 +611,13 @@ padding: 3rem;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
+  background-color: #0f0f13;
+  
+}
+
+.container-03{
+    background-color: #0f0f13;
 }
 
 /* card da equipe  */
@@ -626,7 +633,7 @@ padding: 3rem;
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
-    margin: 190px 90px 0px;
+    margin: 0px 40px 90px;
     
 
   }
@@ -673,12 +680,7 @@ padding: 3rem;
   }
   
  
-  
-  .card01 button:hover {
-    background: red;
-    color: white;
-    cursor: pointer;
-  }
+
  .img_logo_card01{
     background-image: url(imagens/icone_emBranco.png);
     background-color: #ffffff;
@@ -690,8 +692,8 @@ padding: 3rem;
     align-items: center;
     text-align: center;
     overflow: hidden;
-    padding: 1rem;
-    margin: 1rem;
+
+    margin: 10px;
     border: solid 2px wheat;
     border-radius: 100%;
   } 
@@ -709,4 +711,84 @@ footer{
     margin:0;
     padding: 0;
 
+}
+
+/* CARD DA EQUIPE TESTE 2 */
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .inner {
+    --w: 200px;
+    --h: 250px;
+    --translateZ: calc((var(--w) + var(--h)) + 0px);
+    --rotateX: -15deg;
+    --perspective: 1000px;
+    position: absolute;
+    width: var(--w);
+    height: var(--h);
+    top: 25%;
+    left: calc(50% - (var(--w) / 2) - 2.5px);
+    z-index: 2;
+    transform-style: preserve-3d;
+    transform: perspective(var(--perspective));
+    animation: rotating 20s linear infinite; /* */
+  }
+  @keyframes rotating {
+    from {
+      transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+        rotateY(0);
+    }
+    to {
+      transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+        rotateY(0.5turn);
+    }
+  }
+  
+  .card02 {
+    position: absolute;
+    border: 2px solid rgba(var(--color-card));
+    border-radius: 12px;
+    overflow: hidden;
+    inset: 0;
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+      translateZ(var(--translateZ));
+  }
+  
+  .img02 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    text-align: center;
+    background: #0000
+      radial-gradient(
+        circle,
+        rgba(var(--color-card), 0.2) 0%,
+        rgba(var(--color-card), 0.2) 80%,
+        rgba(var(--color-card), 0.2) 100%
+      );
+  }
+.iconedaEquipe{
+    width: 100%;
+    height: 130px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.texto-card{
+    color: #ffffff;
+    font-size: 10px;
 }
