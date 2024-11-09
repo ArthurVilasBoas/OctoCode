@@ -717,7 +717,7 @@ footer{
 
 .wrapper {
     width: 100%;
-    height: 100%;
+    height: 50%;
     position: relative;
     text-align: center;
     display: flex;
@@ -740,7 +740,7 @@ footer{
     z-index: 2;
     transform-style: preserve-3d;
     transform: perspective(var(--perspective));
-    animation: rotating 20s linear infinite; /* */
+    animation: rotating 30s linear infinite; /* */
   }
   @keyframes rotating {
     from {
@@ -749,25 +749,29 @@ footer{
     }
     to {
       transform: perspective(var(--perspective)) rotateX(var(--rotateX))
-        rotateY(0.5turn);
+        rotateY(1turn);
     }
   }
   
   .card02 {
     position: absolute;
+    display: flex;
     border: 2px solid rgba(var(--color-card));
     border-radius: 12px;
     overflow: hidden;
+    justify-content: center;
     inset: 0;
     transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
       translateZ(var(--translateZ));
+    
   }
   
   .img02 {
     width: 100%;
+    justify-content: center;
     height: 100%;
-    object-fit: cover;
-    align-items: center;
+    display: flex;
+    /* align-items: center; */
     text-align: center;
     background: #0000
       radial-gradient(
@@ -778,17 +782,89 @@ footer{
       );
   }
 .iconedaEquipe{
-    width: 100%;
-    height: 130px;
-    background-size: 100%;
+    width: 80%;
+    justify-content: center;
+    height: 110px;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 100%;
     overflow: hidden;
-}
+    padding-top: 5%;
 
+
+}
 .texto-card{
     color: #ffffff;
     font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: 70%;
+    z-index: 10;
+    background: #0000;
+    
+}
+
+/* iconesdocard */
+.container-icones-card2{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+     justify-content:end; 
+    /* text-align:center; */
+    /* padding: 100%; */
+    position: absolute;
+    align-items: normal;
+    /* align-items:end; */
+    justify-content: space-around;
+    /* aaa */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    background-color: #0000;
+    padding-top:100% ;
+  /*  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  
+  background-color: #0000; */
+  
+}
+
+.icone_instagram{
+    width: 50%;
+    height: auto;
+    color: #ffffff;
+    margin-right: 10px;
+
+}
+
+.icone_instagram:hover{
+    transform: scale(1.5);
+    color:rgb(230, 230, 230) ;
+    /* background: linear-gradient(176deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    background: linear-gradient(306deg, rgba(131,58,180,1) 10%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 100%;
+  
+    
+}
+.icone_github{
+    width: 50%;
+    height: auto;
+    color: #ffffff;
+    margin-left: 10px;
+
+
+}
+.icone_github:hover{
+    transform: scale(1.5);
+    color: #a600ff;
+    border-radius: 100%;
+    
+   
 }
