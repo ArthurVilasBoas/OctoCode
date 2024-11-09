@@ -32,3 +32,17 @@ function clickMenu() {
         
     }
   }
+
+
+  // btn alerta
+
+
+
+ function mostrarPoliticas(){
+
+  var Politicas = "Política de Privacidade: \n\n Esta empresa valoriza a sua privacidade. \n \n Todos os dados coletados são usados exclusivamente para melhorar sua experiência e não serão compartilhados com terceiros sem sua autorização.Ao continuar navegando, você concorda com os termos de nossa Política de Privacidade." 
+
+
+
+  alert(Politicas)
+ }

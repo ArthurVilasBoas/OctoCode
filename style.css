@@ -1,3 +1,11 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f13;
+    width: 100%;
+    height: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -249,12 +257,30 @@ nav.sidebar{
 }
 
 
-.txt-link-Fexar{
-    padding-left: 5rem;
-   
-    
+.div_link-Fexar:hover{
+    background-color: white;
+    color: #000000;
+    transform: scale(1.0);
 }
 
+.div_link-Fexar{
+    padding-left: 9rem;
+    background-color: #ffffff00;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1.s;
+    border-radius: 4px;
+}
+
+#btnFexar{
+    background-color: #ffffff00;
+    color: #000000;
+}
+
+#btnFexar:hover{
+    background-color: #ffffff00;
+    color: #ffffff;
+}
 
 .txt-link{
     font-family: 'lexend';
@@ -464,11 +490,12 @@ ul li.item-menu a .icon >i{
     font-size: 2px;
     margin: 2px;
     margin-top: 2%;
-    padding-left: 35%;
+    padding-left: 75%;
 
 }
 .div_btnFexar{
-    padding-bottom: 5%;
+    padding-bottom: 10%;
+    color: #ffffff;
 
 }
 /* hamburguer */
@@ -698,22 +725,47 @@ padding: 3rem;
     border-radius: 100%;
   } 
 
-  /* FOOTER */
+                    /* FOOTER */
 
-footer{
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
+.container-footer{
+/* border: red solid 2px; */
+width: 100%;
+height: 200px;
+background: linear-gradient(180deg, #0f0f13 12%, rgba(43,8,62,1) 77%);;
+padding: 0;
+margin: 0;
+display: flex;
+}
+
+.redesSociais{
+    font-size: 20px;
+    color: rgb(87, 86, 86);
+    margin: 0;
+    margin-left: 50%;
+    margin-top: 2%;
     width: 100%;
-    border: red solid 2px;
-    margin:0;
+    height: 0px;
     padding: 0;
+    background-color: #0f0f13;
+}
+.politica_de_privacidade{
+    
+    font-size: 18px;
+    color: rgb(44, 44, 44);
+    margin: 0;
+    margin-left: 1%;
+    margin-top: 11.2%;
+    width: 100%;
+    height: 0px;
+    padding: 0;
+    background-color: #0f0f13;
+}
+.politica_de_privacidade:hover{
+    color: rgb(80, 80, 80);
 
 }
 
-/* CARD DA EQUIPE TESTE 2 */
+                        /* CARD DA EQUIPE TESTE 2 */
 
 .wrapper {
     width: 100%;
@@ -868,3 +920,6 @@ footer{
     
    
 }
+
+
+
