@@ -171,17 +171,7 @@ a{
 .text-section p {
     margin: 2px;
     text-align: center;
-    
-
-    
 }
-
-
-
-
-
-    /* font-family: magic;
-    src: url(fonts/MAGIC\ NIGHT.otf) format('opentype'),url(fonts/MAGIC\ NIGHT.ttf) format('truetype'); */
 
 .text-section h1 {
 
@@ -589,14 +579,6 @@ padding: 3rem;
     width: 100%;
     image-resolution:100px;
    
-    /*margin: 0,
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
-
 } 
 
 .container-degrade02{
@@ -757,7 +739,7 @@ position: absolute;
 .politica_de_privacidade{
     
     font-size: 18px;
-    color: rgb(44, 44, 44);
+    color: #a3a3a3;
     margin: 0;
     margin-left: 1%;
     margin-top: 11.2%;
@@ -767,6 +749,7 @@ position: absolute;
     background-color: #0f0f13;
     
 }
+
 .redesSociais__{
 border: solid cyan 2px ;
 width: 200px;
@@ -787,9 +770,8 @@ text-decoration: none;
 .icone-redeSociais-git{
     display: flex;
    flex-direction: column;
-   /* border:solid red 2px; */
    align-items: center;
-    margin-top: 10px;
+    margin-top: 27px;
    
     text-decoration: white;
     
@@ -813,6 +795,28 @@ text-decoration: none;
 
 .politica_de_privacidade:hover{
     color: rgb(80, 80, 80);
+
+}
+.politica_de_privacidade::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #e3e3e3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    margin: 0;
+    margin-left: 1%;
+    margin-bottom: 2%;
+
+}
+
+.politica_de_privacidade:hover::after{
+    width: 181px;
+    margin: 0;
+    margin-left: 1%;
+    margin-bottom: 2%;
 }
 
 
@@ -875,7 +879,6 @@ text-decoration: none;
     justify-content: center;
     height: 100%;
     display: flex;
-    /* align-items: center; */
     text-align: center;
     background: #0000
       radial-gradient(
@@ -917,14 +920,10 @@ text-decoration: none;
     width: 100%;
     height: 100%;
     color: #ffffff;
-     justify-content:end; 
-    /* text-align:center; */
-    /* padding: 100%; */
+     justify-content:end;
     position: absolute;
     align-items: normal;
-    /* align-items:end; */
     justify-content: space-around;
-
     display: flex;
     flex-direction: row;
     background-color: #0000;
@@ -932,14 +931,12 @@ text-decoration: none;
   
 }
 
-
 /* icones git/instagram */
 .icone_instagram{
     width: 50%;
     height: auto;
     color: #ffffff;
     margin-right: 10px;
-    /* border: blue 2px solid; */
     border-radius: 5px;
     transition: 1.5s;
 }
@@ -952,7 +949,6 @@ text-decoration: none;
     background: linear-gradient(306deg, rgba(131,58,180,1) 10%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     border-radius: 100%;
   
-    
 }
 .icone_github{
     width: 50%;
@@ -969,7 +965,6 @@ text-decoration: none;
     box-shadow: #200a2c;
 }
 
-
 /* link */
 .link-clicavel{
     color: #661e90;
@@ -980,4 +975,20 @@ text-decoration: none;
     color: #ffffff;
     background-color: #661e90;
     border-radius: 100%;
+}
+
+/* Resposivo */
+
+@media screen and (max-width:1000px){
+    
+    .titulo_cidadeRoxa{
+        display: block;
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .container-CidadeRoxa{
+        display: block;
+    }
 }
