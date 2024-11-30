@@ -560,9 +560,11 @@ padding: 3rem;
     font-size: 100px;
     color: rgb(82, 30, 95);
     text-align: center;
-    padding: 180px;
+    /* padding: 180px 0px 0px 280px; */
     font-family: 'Orbitron';
-    display: flex;
+    /* display: flex*/
+;
+    
 }
 
 
