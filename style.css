@@ -1209,10 +1209,12 @@ label{
 @media screen and (max-width:470px){
     
     .titulo_cidadeRoxa{
-        display: flex;
-        font-size: 180px;
-        justify-content: center;
-        align-items: center;
+        font-size: 100px;
+        color: rgb(82, 30, 95);
+        text-align: center;
+        /* padding: 180px 0px 0px 280px; */
+        font-family: 'Orbitron';
+        /* display: flex*/;
         
         
         
