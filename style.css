@@ -144,7 +144,13 @@ a{
     width: 100%;
 }
 
+.acheipet_link{
+    color: #000000;
+}
 
+.acheipet_link:hover{
+    color: #000000;
+}
 
 .logo {
     max-width: 150px;
